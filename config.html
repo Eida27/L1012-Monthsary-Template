@@ -1,0 +1,254 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>L1012 config</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Caveat:wght@500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="browser-config.js"></script>
+    <script src="config-page.js"></script>
+  </head>
+  <body class="min-h-screen text-stone-900 antialiased">
+    <main class="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-8 sm:px-6">
+      <header class="flex flex-col gap-2 border-b border-stone-200 pb-5">
+        <p class="text-sm font-semibold uppercase tracking-wide text-rose-700">
+          L1012 setup
+        </p>
+        <h1 class="font-display-romantic text-5xl text-rose-800">
+          monthsary page config
+        </h1>
+      </header>
+
+      <form data-config-form class="grid gap-6 lg:grid-cols-[280px_1fr]">
+        <section class="flex flex-col gap-4 rounded-xl border border-stone-200 bg-white p-5 shadow-sm">
+          <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+            Site Key
+            <input
+              class="rounded-lg border-stone-300 text-base"
+              name="siteKey"
+              required
+              value="L1012-9281"
+            />
+          </label>
+          <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+            Edit PIN
+            <input
+              class="rounded-lg border-stone-300 text-base"
+              inputmode="numeric"
+              name="pin"
+              required
+              type="password"
+              value="493821"
+            />
+          </label>
+          <button
+            class="inline-flex items-center justify-center gap-2 rounded-lg border border-rose-200 bg-white px-4 py-3 text-sm font-semibold text-rose-800 transition hover:bg-rose-50"
+            data-load-config
+            type="button"
+          >
+            <span class="material-symbols-outlined text-[18px]">sync</span>
+            Load
+          </button>
+          <p
+            class="min-h-6 text-sm font-medium text-stone-600 data-[tone=error]:text-red-700 data-[tone=success]:text-green-700"
+            data-config-status
+          ></p>
+        </section>
+
+        <section class="grid gap-5 rounded-xl border border-stone-200 bg-white p-5 shadow-sm">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Page title
+              <input
+                class="rounded-lg border-stone-300 text-base"
+                name="title"
+                required
+                value="our little corner"
+              />
+            </label>
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Display names
+              <input
+                class="rounded-lg border-stone-300 text-base"
+                name="displayNames"
+                required
+                value="mavi + caeiona"
+              />
+            </label>
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Your name
+              <input
+                class="rounded-lg border-stone-300 text-base"
+                name="partnerOneName"
+                required
+                value="mavi"
+              />
+            </label>
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Her name
+              <input
+                class="rounded-lg border-stone-300 text-base"
+                name="partnerTwoName"
+                required
+                value="caeiona"
+              />
+            </label>
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Monthsary date
+              <input
+                class="rounded-lg border-stone-300 text-base"
+                name="monthsaryDate"
+                required
+                type="date"
+                value="2023-07-02"
+              />
+            </label>
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Date label
+              <input
+                class="rounded-lg border-stone-300 text-base"
+                name="monthsaryLabel"
+                required
+                value="1st monthsary"
+              />
+            </label>
+          </div>
+
+          <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+            Hero subtitle
+            <input
+              class="rounded-lg border-stone-300 text-base"
+              name="heroSubtitle"
+              required
+              value="a private space for two hearts"
+            />
+          </label>
+          <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+            Privacy line
+            <input
+              class="rounded-lg border-stone-300 text-base"
+              name="privacyLine"
+              required
+              value="only you and me."
+            />
+          </label>
+          <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+            Love note
+            <textarea
+              class="min-h-36 rounded-lg border-stone-300 text-base"
+              name="loveNote"
+              required
+            >our first monthsary and it already feels like home. thank you for choosing me every day. i love how we make the little things feel so special. no matter what happens, i'll always be here for you. i love you so much!</textarea>
+          </label>
+          <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+            Playlist note
+            <textarea
+              class="min-h-20 rounded-lg border-stone-300 text-base"
+              name="playlistNote"
+            >soft playlist queued: late-night talks, coffee dates, and that little forever feeling.</textarea>
+          </label>
+
+          <div class="grid gap-4 md:grid-cols-3">
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Favorite things
+              <textarea class="min-h-44 rounded-lg border-stone-300 text-base" name="favoriteThings">late night talks
+silly moments
+coffee dates
+road trips
+inside jokes
+comfort & hugs
+you</textarea>
+            </label>
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Bucket list
+              <textarea class="min-h-44 rounded-lg border-stone-300 text-base" name="bucketList">stargazing at the park
+pottery workshop
+weekend beach trip
+trying that new ramen place
+midnight drive to nowhere</textarea>
+            </label>
+            <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+              Memories
+              <textarea class="min-h-44 rounded-lg border-stone-300 text-base" name="memories">stargazing at the park
+pottery workshop
+first coffee date</textarea>
+            </label>
+          </div>
+
+          <fieldset class="grid gap-4 rounded-xl border border-stone-200 p-4">
+            <legend class="px-2 text-sm font-semibold text-stone-700">
+              Photos
+            </legend>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+                Hero photo
+                <input
+                  accept="image/jpeg,image/png,image/webp"
+                  class="rounded-lg border border-stone-300 bg-white text-sm"
+                  data-photo-slot="hero"
+                  type="file"
+                />
+              </label>
+              <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+                Gallery photo 1
+                <input
+                  accept="image/jpeg,image/png,image/webp"
+                  class="rounded-lg border border-stone-300 bg-white text-sm"
+                  data-photo-slot="gallery-1"
+                  type="file"
+                />
+              </label>
+              <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+                Gallery photo 2
+                <input
+                  accept="image/jpeg,image/png,image/webp"
+                  class="rounded-lg border border-stone-300 bg-white text-sm"
+                  data-photo-slot="gallery-2"
+                  type="file"
+                />
+              </label>
+              <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+                Gallery photo 3
+                <input
+                  accept="image/jpeg,image/png,image/webp"
+                  class="rounded-lg border border-stone-300 bg-white text-sm"
+                  data-photo-slot="gallery-3"
+                  type="file"
+                />
+              </label>
+              <label class="flex flex-col gap-2 text-sm font-semibold text-stone-700">
+                Gallery photo 4
+                <input
+                  accept="image/jpeg,image/png,image/webp"
+                  class="rounded-lg border border-stone-300 bg-white text-sm"
+                  data-photo-slot="gallery-4"
+                  type="file"
+                />
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="flex justify-end">
+            <button
+              class="inline-flex items-center justify-center gap-2 rounded-lg bg-rose-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-rose-800"
+              type="submit"
+            >
+              <span class="material-symbols-outlined text-[18px]">save</span>
+              Save
+            </button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

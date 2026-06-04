@@ -252,27 +252,38 @@ document.addEventListener("DOMContentLoaded", () => {
     true,
   );
 
-  document.querySelectorAll("[data-bucket-item]").forEach((item) => {
-    item.addEventListener(
-      "click",
-      () => {
-        const done = !item.classList.contains("is-done");
-        item.classList.toggle("is-done", done);
-        item.setAttribute("aria-pressed", String(done));
-        const icon = item.querySelector(".material-symbols-outlined");
-        if (icon) {
-          icon.textContent = done ? "task_alt" : "favorite";
-          icon.classList.toggle("icon-fill", done);
-          icon.classList.toggle("icon-outline", !done);
-        }
-      },
-      true,
-    );
-    item.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        item.click();
+  const initializeBucketItems = (root = document) => {
+    root.querySelectorAll("[data-bucket-item]").forEach((item) => {
+      if (item.dataset.bucketBound === "true") {
+        return;
       }
+      item.dataset.bucketBound = "true";
+      item.addEventListener(
+        "click",
+        () => {
+          const done = !item.classList.contains("is-done");
+          item.classList.toggle("is-done", done);
+          item.setAttribute("aria-pressed", String(done));
+          const icon = item.querySelector(".material-symbols-outlined");
+          if (icon) {
+            icon.textContent = done ? "task_alt" : "favorite";
+            icon.classList.toggle("icon-fill", done);
+            icon.classList.toggle("icon-outline", !done);
+          }
+        },
+        true,
+      );
+      item.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          item.click();
+        }
+      });
     });
+  };
+
+  initializeBucketItems();
+  document.addEventListener("l1012:bucket-list-rendered", () => {
+    initializeBucketItems();
   });
 });

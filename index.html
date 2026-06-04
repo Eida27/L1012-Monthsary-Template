@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
       rel="stylesheet"
     />
+    <script src="browser-config.js"></script>
+    <script src="site-config.js"></script>
     <script src="script.js"></script>
     <link href="styles.css" rel="stylesheet" />
   </head>
@@ -74,6 +76,7 @@
         >
       </div>
       <h1
+        data-config-field="title"
         class="font-display-romantic text-headline-lg-mobile text-primary dark:text-primary-fixed-dim md:text-display-romantic tracking-tight"
       >
         our little corner
@@ -130,6 +133,7 @@
               >auto_awesome</span
             >
             <p
+              data-config-field="heroSubtitle"
               class="font-body-lg text-body-lg text-on-surface-variant italic mb-2 relative z-10"
             >
               a private space for two hearts
@@ -137,7 +141,7 @@
             <p
               class="font-body-md text-body-md text-on-surface-variant flex items-center justify-center md:justify-start gap-2"
             >
-              only you and me.
+              <span data-config-field="privacyLine">only you and me.</span>
               <span class="material-symbols-outlined text-[18px] text-primary"
                 >lock</span
               >
@@ -152,6 +156,7 @@
             <img
               alt="Couple watching sunset making a heart shape with their hands"
               class="w-64 h-80 object-cover rounded shadow-inner"
+              data-config-image="hero"
               data-alt="A romantic, soft-focus photograph of a couple sitting outdoors, viewed from behind. They are raising their arms to form a heart shape with their hands against a beautiful, pastel-colored sunset sky filled with soft pink and orange clouds. The scene feels intimate, warm, and nostalgic, perfectly matching a cozy, light-mode romantic scrapbook aesthetic."
               src="assets/hero-couple-sunset.jpg"
             />
@@ -185,6 +190,7 @@
             today's our day
           </p>
           <h2
+            data-config-field="monthsaryDisplayDate"
             class="font-display-romantic text-headline-lg text-on-surface tracking-wider"
           >
             07 &bull; 02 &bull; 2023
@@ -192,13 +198,18 @@
           <p
             class="font-headline-lg text-primary text-xl mt-1 flex items-center justify-center sm:justify-start gap-2 pulse-hover"
           >
-            1st monthsary
+            <span data-config-field="monthsaryLabel">1st monthsary</span>
             <span
               class="material-symbols-outlined text-[20px] transform rotate-12"
               >favorite</span
             >
           </p>
-          <p id="playlist-card" class="playlist-card" hidden>
+          <p
+            id="playlist-card"
+            class="playlist-card"
+            data-config-field="playlistNote"
+            hidden
+          >
             soft playlist queued: late-night talks, coffee dates, and that
             little forever feeling.
           </p>
@@ -232,6 +243,7 @@
               >
             </h3>
             <p
+              data-config-field="loveNote"
               class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
             >
               our first monthsary and it already feels like home. thank you for
@@ -254,6 +266,7 @@
             <img
               alt="Holding hands"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-config-image="gallery-1"
               data-alt="Close up of two hands gently holding each other in a warm, intimate setting. The lighting is soft and flattering, creating a romantic, cozy light-mode aesthetic suitable for a personal memory scrapbook."
               src="assets/memory-holding-hands.jpg"
             />
@@ -272,6 +285,7 @@
             <img
               alt="Shoes together"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-config-image="gallery-2"
               data-alt="A casual top-down view of two people's feet wearing sneakers standing close together on the pavement. The mood is candid and playful, fitting a personal, scrapbook-style light-mode theme with warm tones."
               src="assets/memory-shoes-together.jpg"
             />
@@ -290,6 +304,7 @@
             <img
               alt="Coffee dates"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-config-image="gallery-3"
               data-alt="Two iced coffees or boba teas being held up together in a cheers gesture. The background features a soft, pastel gingham picnic blanket. The image is bright, warm, and highly curated to match a cute, romantic light-mode UI."
               src="assets/memory-coffee-date.jpg"
             />
@@ -300,6 +315,7 @@
             <img
               alt="Mirror selfie"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-config-image="gallery-4"
               data-alt="A cute, candid mirror selfie of a young couple wearing cozy clothing. The lighting is soft and neutral, leaning towards a warm, light-mode scrapbook aesthetic, capturing a moment of everyday intimacy."
               src="assets/memory-mirror-selfie.jpg"
             />
@@ -326,7 +342,7 @@
             >favorite</span
           >
         </h3>
-        <div class="flex flex-wrap justify-center gap-3">
+        <div class="flex flex-wrap justify-center gap-3" data-config-list="favoriteThings">
           <div
             class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
           >
@@ -408,7 +424,7 @@
               >favorite</span
             >
           </h3>
-          <ul class="space-y-4 w-full max-w-md">
+          <ul class="space-y-4 w-full max-w-md" data-config-list="bucketList">
             <li
               data-bucket-item
               aria-pressed="false"
@@ -509,7 +525,7 @@
               >favorite</span
             >
           </h3>
-          <ul class="space-y-4 w-full max-w-md">
+          <ul class="space-y-4 w-full max-w-md" data-config-list="memories">
             <li
               class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
             >
@@ -566,7 +582,7 @@
           class="material-symbols-outlined text-[24px] transform -rotate-12 floating"
           >eco</span
         >
-        mavi + caeiona
+        <span data-config-field="displayNames">mavi + caeiona</span>
         <span
           class="material-symbols-outlined text-[24px] transform rotate-12 floating-delay pulse-hover cursor-pointer interactive-area"
           >favorite</span

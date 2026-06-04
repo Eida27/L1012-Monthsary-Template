@@ -69,6 +69,14 @@ describe("Our Little Corner static app", () => {
     assert.match(indexHtml, /data-action="playlist"/);
     assert.match(indexHtml, /data-bucket-item/);
     assert.match(scriptJs, /createHeartBurst/);
+    assert.match(indexHtml, /data-nav-target=/);
+    assert.match(indexHtml, /aria-label="Show top"/);
+    assert.match(indexHtml, /aria-label="Show note"/);
+    assert.match(indexHtml, /aria-label="Show photos"/);
+    assert.match(indexHtml, /aria-label="Show bucket list"/);
+    assert.match(scriptJs, /data-nav-target/);
+    assert.match(scriptJs, /scrollIntoView/);
+    assert.match(scriptJs, /aria-current/);
     assert.match(scriptJs, /tailwind\.config/);
     assert.match(stylesCss, /prefers-reduced-motion/);
     assert.match(stylesCss, /\.icon-fill/);

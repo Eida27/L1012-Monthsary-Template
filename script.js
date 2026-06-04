@@ -182,6 +182,51 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  const navActiveClass =
+    "flex flex-col items-center justify-center bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-full p-3 active:scale-90 duration-200 pulse-hover";
+  const navInactiveClass =
+    "flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200";
+
+  const navButtons = document.querySelectorAll("[data-nav-target]");
+  const setActiveNavButton = (activeButton) => {
+    navButtons.forEach((button) => {
+      const isActive = button === activeButton;
+      button.className = isActive ? navActiveClass : navInactiveClass;
+      button.setAttribute("aria-current", String(isActive));
+    });
+  };
+
+  navButtons.forEach((button) => {
+    button.addEventListener(
+      "click",
+      () => {
+        const targetId = button.getAttribute("data-nav-target");
+        const target = targetId ? document.getElementById(targetId) : null;
+        if (!target) {
+          return;
+        }
+
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        setActiveNavButton(button);
+
+        if (window.history?.replaceState) {
+          window.history.replaceState(null, "", `#${target.id}`);
+        }
+      },
+      true,
+    );
+  });
+
+  const initialTarget = window.location.hash.slice(1);
+  if (initialTarget) {
+    const initialButton = Array.from(navButtons).find(
+      (button) => button.getAttribute("data-nav-target") === initialTarget,
+    );
+    if (initialButton) {
+      setActiveNavButton(initialButton);
+    }
+  }
+
   const themeButton = document.querySelector('[data-action="theme"]');
   themeButton?.addEventListener(
     "click",

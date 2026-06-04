@@ -118,6 +118,7 @@
       </div>
       <!-- Hero Section -->
       <section
+        id="top"
         class="w-full flex flex-col md:flex-row items-center justify-between gap-8 mt-8 scroll-reveal visible"
       >
         <div
@@ -209,6 +210,7 @@
       </section>
       <!-- Love Note -->
       <section
+        id="note"
         class="w-full bg-surface-container-low rounded-3xl p-stack-md border border-surface-variant shadow-sm relative scroll-reveal interactive-area"
       >
         <div class="washi-tape bg-tertiary-container washi-note"></div>
@@ -242,6 +244,7 @@
       </section>
       <!-- Mini Photo Grid -->
       <section
+        id="photos"
         class="w-full bg-surface-container-lowest rounded-3xl p-stack-md shadow-[0_8px_30px_rgb(141,75,76,0.06)] scroll-reveal"
       >
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -388,6 +391,7 @@
     <div class="cloud-bottom cloud-drift"></div>
     <!-- Footer -->
     <section
+      id="bucket-list"
       class="w-full max-w-3xl mx-auto px-4 sm:px-6 mb-stack-lg scroll-reveal"
     >
       <div
@@ -586,21 +590,33 @@
         class="flex justify-around items-center px-gutter py-stack-sm pb-safe w-full max-w-md mx-auto"
       >
         <button
+          data-nav-target="top"
+          aria-current="true"
+          aria-label="Show top"
           class="flex flex-col items-center justify-center bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-full p-3 active:scale-90 duration-200 pulse-hover"
         >
           <span class="material-symbols-outlined icon-fill">favorite</span>
         </button>
         <button
+          data-nav-target="note"
+          aria-current="false"
+          aria-label="Show note"
           class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
         >
           <span class="material-symbols-outlined">auto_awesome</span>
         </button>
         <button
+          data-nav-target="photos"
+          aria-current="false"
+          aria-label="Show photos"
           class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
         >
           <span class="material-symbols-outlined">collections</span>
         </button>
         <button
+          data-nav-target="bucket-list"
+          aria-current="false"
+          aria-label="Show bucket list"
           class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
         >
           <span class="material-symbols-outlined">menu_book</span>

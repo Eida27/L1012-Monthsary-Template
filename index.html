@@ -2,610 +2,610 @@
 
 <html lang="en">
   <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>our little corner</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-  rel="stylesheet"
-  />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Caveat:wght@400..700&amp;display=swap"
-  rel="stylesheet"
-  />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-  rel="stylesheet"
-  />
-  <script src="script.js"></script>
-  <link href="styles.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>our little corner</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Caveat:wght@400..700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body
-  class="text-on-surface antialiased min-h-screen flex flex-col relative pb-20 md:pb-0"
-  >
-  <!-- Particle System -->
-  <div aria-hidden="true" class="particle-container" id="particle-container">
-  <span
-  class="material-symbols-outlined text-primary-container text-sm absolute bottom-0 left-[10%] floating-particle icon-fill"
-  >favorite</span
-  >
-  <span
-  class="material-symbols-outlined text-tertiary-container text-xs absolute bottom-1/4 left-[30%] floating-particle icon-fill"
-  >favorite</span
-  >
-  <span
-  class="material-symbols-outlined text-primary-container text-sm absolute bottom-1/2 left-0 floating-particle icon-fill"
-  >favorite</span
-  >
-  <span
-  class="material-symbols-outlined text-secondary-container text-xs absolute bottom-0 left-[60%] floating-particle icon-fill"
-  >favorite</span
-  >
-  <span
-  class="material-symbols-outlined text-primary text-xs absolute bottom-[10%] left-[-10%] floating-particle icon-fill"
-  >favorite</span
-  >
-  <span
-  class="material-symbols-outlined text-tertiary-container text-sm absolute bottom-1/3 left-[80%] floating-particle icon-fill"
-  >favorite</span
-  >
-  <span
-  class="material-symbols-outlined text-primary-container text-xs absolute bottom-[20%] left-[50%] floating-particle icon-fill"
-  >star</span
-  >
-  <span
-  class="material-symbols-outlined text-tertiary-container text-sm absolute bottom-[60%] left-[20%] floating-particle shimmer icon-fill"
-  >star</span
-  >
-  <span
-  class="material-symbols-outlined text-secondary-container text-xs absolute bottom-[40%] left-[80%] floating-particle shimmer icon-fill"
-  >favorite</span
-  >
-  </div>
-  <!-- TopAppBar -->
-  <header
-  class="w-full py-4 flex justify-between items-center px-container-padding-mobile max-w-7xl mx-auto relative z-20"
-  >
-  <div class="flex items-center gap-2 text-primary">
-  <span
-  class="material-symbols-outlined pulse-continuous text-2xl icon-fill"
-  >favorite</span
-  >
-  </div>
-  <h1
-  class="font-display-romantic text-headline-lg-mobile text-primary dark:text-primary-fixed-dim md:text-display-romantic tracking-tight"
-  >
-  our little corner
-  </h1>
-  <div class="flex items-center">
-  <button
-  data-action="theme"
-  aria-pressed="false"
-  title="Toggle soft night mode"
-  class="flex items-center gap-1 bg-surface-container-high text-on-surface-variant px-3 py-1.5 rounded-full text-label-sm font-label-sm border border-outline-variant hover:bg-surface-container-highest transition-colors"
-  >
-  <span class="material-symbols-outlined text-[16px]">lock</span>
-  just us
-  </button>
-  </div>
-  </header>
-  <main
-  class="flex-grow flex flex-col items-center w-full max-w-3xl mx-auto px-4 sm:px-6 relative z-10 gap-stack-lg pb-stack-lg"
-  >
-  <!-- Decorative Elements Background -->
-  <div class="absolute inset-0 pointer-events-none overflow-hidden -z-10">
-  <span
-  class="material-symbols-outlined text-primary-container text-4xl absolute top-20 left-10 floating opacity-50 pulse-hover"
-  >favorite</span
-  >
-  <span
-  class="material-symbols-outlined text-tertiary-container text-2xl absolute top-40 right-10 floating-delay opacity-60 shimmer"
-  >star</span
-  >
-  <span
-  class="material-symbols-outlined text-primary text-3xl absolute top-[40%] left-[5%] floating opacity-40 pulse-hover"
-  >favorite</span
-  >
-  <span
-  class="material-symbols-outlined text-secondary-container text-xl absolute top-[60%] right-[10%] floating-delay opacity-70 shimmer"
-  >colors_spark</span
-  >
-  <span
-  class="material-symbols-outlined text-primary-container text-2xl absolute top-[80%] left-[15%] floating opacity-50 pulse-hover"
-  >favorite</span
-  >
-  </div>
-  <!-- Hero Section -->
-  <section
-  class="w-full flex flex-col md:flex-row items-center justify-between gap-8 mt-8 scroll-reveal visible"
-  >
-  <div
-  class="flex-1 text-center md:text-left flex flex-col items-center md:items-start gap-4"
-  >
-  <div class="relative">
-  <span
-  class="material-symbols-outlined absolute -top-4 -left-6 text-tertiary-container opacity-50 transform -rotate-12 shimmer"
-  >auto_awesome</span
-  >
-  <p
-  class="font-body-lg text-body-lg text-on-surface-variant italic mb-2 relative z-10"
-  >
-  a private space for two hearts
-  </p>
-  <p
-  class="font-body-md text-body-md text-on-surface-variant flex items-center justify-center md:justify-start gap-2"
-  >
-  only you and me.
-  <span class="material-symbols-outlined text-[18px] text-primary"
-  >lock</span
-  >
-  </p>
-  </div>
-  </div>
-  <div class="flex-1 flex justify-center relative">
-  <div
-  class="polaroid relative z-10 tilt-on-hover cursor-pointer interactive-area"
-  >
-  <div class="washi-tape"></div>
-  <img
-  alt="Couple watching sunset making a heart shape with their hands"
-  class="w-64 h-80 object-cover rounded shadow-inner"
-  data-alt="A romantic, soft-focus photograph of a couple sitting outdoors, viewed from behind. They are raising their arms to form a heart shape with their hands against a beautiful, pastel-colored sunset sky filled with soft pink and orange clouds. The scene feels intimate, warm, and nostalgic, perfectly matching a cozy, light-mode romantic scrapbook aesthetic."
-  src="assets/hero-couple-sunset.jpg"
-  />
-  <div
-  class="absolute -bottom-6 -right-6 bg-primary-container text-white p-3 rounded-full shadow-lg transform rotate-12 floating pulse-hover cursor-pointer"
-  >
-  <span class="material-symbols-outlined icon-fill">favorite</span>
-  </div>
-  </div>
-  </div>
-  </section>
-  <!-- Countdown / Date Card -->
-  <section
-  class="w-full bg-surface-container-lowest rounded-3xl p-stack-md shadow-[0_8px_30px_rgb(141,75,76,0.06)] flex flex-col sm:flex-row items-center gap-6 relative overflow-hidden scroll-reveal interactive-area"
-  >
-  <div
-  data-action="playlist"
-  role="button"
-  tabindex="0"
-  aria-label="Open our song note"
-  aria-expanded="false"
-  class="bg-primary-fixed p-4 rounded-2xl flex-shrink-0 pulse-hover cursor-pointer interactive-area"
-  >
-  <span
-  class="material-symbols-outlined text-4xl text-primary icon-fill"
-  >calendar_month</span
-  >
-  </div>
-  <div class="flex flex-col text-center sm:text-left z-10">
-  <p class="font-body-md text-body-md text-on-surface-variant mb-1">
-  today's our day
-  </p>
-  <h2
-  class="font-display-romantic text-headline-lg text-on-surface tracking-wider"
-  >
-  07 &bull; 02 &bull; 2023
-  </h2>
-  <p
-  class="font-headline-lg text-primary text-xl mt-1 flex items-center justify-center sm:justify-start gap-2 pulse-hover"
-  >
-  1st monthsary
-  <span
-  class="material-symbols-outlined text-[20px] transform rotate-12"
-  >favorite</span
-  >
-  </p>
-  <p id="playlist-card" class="playlist-card" hidden>
-  soft playlist queued: late-night talks, coffee dates, and that
-  little forever feeling.
-  </p>
-  </div>
-  <span
-  class="material-symbols-outlined absolute right-6 bottom-6 text-surface-variant text-6xl opacity-30 pointer-events-none transform -rotate-12 floating"
-  >favorite</span
-  >
-  </section>
-  <!-- Love Note -->
-  <section
-  class="w-full bg-surface-container-low rounded-3xl p-stack-md border border-surface-variant shadow-sm relative scroll-reveal interactive-area"
-  >
-  <div class="washi-tape bg-tertiary-container washi-note"></div>
-  <div class="flex flex-col md:flex-row gap-6 items-start">
-  <div class="flex-shrink-0 mx-auto md:mx-0 pulse-hover cursor-pointer">
-  <span
-  class="material-symbols-outlined text-6xl text-primary opacity-80 icon-fill"
-  >mail</span
-  >
-  </div>
-  <div>
-  <h3
-  class="font-display-romantic text-headline-lg text-on-surface mb-3 flex items-center gap-2"
-  >
-  a note for you
-  <span
-  class="material-symbols-outlined text-[24px] text-primary pulse-hover cursor-pointer"
-  >favorite</span
-  >
-  </h3>
-  <p
-  class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
-  >
-  our first monthsary and it already feels like home. thank you for
-  choosing me every day. i love how we make the little things feel
-  so special. no matter what happens, i'll always be here for you. i
-  love you so much!
-  </p>
-  </div>
-  </div>
-  </section>
-  <!-- Mini Photo Grid -->
-  <section
-  class="w-full bg-surface-container-lowest rounded-3xl p-stack-md shadow-[0_8px_30px_rgb(141,75,76,0.06)] scroll-reveal"
-  >
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-  <div
-  class="aspect-square rounded-2xl overflow-hidden relative group tilt-on-hover cursor-pointer interactive-area"
-  >
-  <img
-  alt="Holding hands"
-  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-  data-alt="Close up of two hands gently holding each other in a warm, intimate setting. The lighting is soft and flattering, creating a romantic, cozy light-mode aesthetic suitable for a personal memory scrapbook."
-  src="assets/memory-holding-hands.jpg"
-  />
-  <div
-  class="absolute -bottom-2 -left-2 bg-primary-container p-1 rounded-full transform -rotate-12 z-10 floating pulse-hover"
-  >
-  <span
-  class="material-symbols-outlined text-white text-sm icon-fill"
-  >favorite</span
-  >
-  </div>
-  </div>
-  <div
-  class="aspect-square rounded-2xl overflow-hidden relative group tilt-on-hover cursor-pointer interactive-area"
-  >
-  <img
-  alt="Shoes together"
-  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-  data-alt="A casual top-down view of two people's feet wearing sneakers standing close together on the pavement. The mood is candid and playful, fitting a personal, scrapbook-style light-mode theme with warm tones."
-  src="assets/memory-shoes-together.jpg"
-  />
-  <div
-  class="absolute top-2 right-2 bg-tertiary-container p-1 rounded-full transform rotate-12 z-10 floating-delay shimmer"
-  >
-  <span
-  class="material-symbols-outlined text-white text-sm icon-fill"
-  >star</span
-  >
-  </div>
-  </div>
-  <div
-  class="aspect-square rounded-2xl overflow-hidden relative group tilt-on-hover cursor-pointer interactive-area"
-  >
-  <img
-  alt="Coffee dates"
-  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-  data-alt="Two iced coffees or boba teas being held up together in a cheers gesture. The background features a soft, pastel gingham picnic blanket. The image is bright, warm, and highly curated to match a cute, romantic light-mode UI."
-  src="assets/memory-coffee-date.jpg"
-  />
-  </div>
-  <div
-  class="aspect-square rounded-2xl overflow-hidden relative group tilt-on-hover cursor-pointer interactive-area"
-  >
-  <img
-  alt="Mirror selfie"
-  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-  data-alt="A cute, candid mirror selfie of a young couple wearing cozy clothing. The lighting is soft and neutral, leaning towards a warm, light-mode scrapbook aesthetic, capturing a moment of everyday intimacy."
-  src="assets/memory-mirror-selfie.jpg"
-  />
-  <div
-  class="absolute bottom-2 right-2 text-primary-container transform rotate-6 z-10 floating shimmer"
-  >
-  <span class="material-symbols-outlined text-2xl icon-fill"
-  >auto_awesome</span
-  >
-  </div>
-  </div>
-  </div>
-  </section>
-  <!-- Favorite Things Tags -->
-  <section
-  class="w-full bg-secondary-container/30 rounded-3xl p-stack-md border border-secondary-container border-dashed flex flex-col items-center text-center scroll-reveal"
-  >
-  <h3
-  class="font-display-romantic text-headline-lg text-on-surface mb-6 flex items-center gap-2"
-  >
-  our favorite things
-  <span
-  class="material-symbols-outlined text-[24px] text-primary pulse-hover cursor-pointer interactive-area"
-  >favorite</span
-  >
-  </h3>
-  <div class="flex flex-wrap justify-center gap-3">
-  <div
-  class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
-  >
-  <span class="material-symbols-outlined text-[16px] text-tertiary"
-  >dark_mode</span
-  >
-  late night talks
-  </div>
-  <div
-  class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
-  >
-  <span class="material-symbols-outlined text-[16px] text-tertiary"
-  >mood</span
-  >
-  silly moments
-  </div>
-  <div
-  class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
-  >
-  <span class="material-symbols-outlined text-[16px] text-tertiary"
-  >local_cafe</span
-  >
-  coffee dates
-  </div>
-  <div
-  class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
-  >
-  <span class="material-symbols-outlined text-[16px] text-tertiary"
-  >directions_car</span
-  >
-  road trips
-  </div>
-  <div
-  class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
-  >
-  <span class="material-symbols-outlined text-[16px] text-tertiary"
-  >chat</span
-  >
-  inside jokes
-  </div>
-  <div
-  class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
-  >
-  <span
-  class="material-symbols-outlined text-[16px] text-primary pulse-hover"
-  >favorite</span
-  >
-  comfort &amp; hugs
-  </div>
-  <div
-  class="bg-primary-container text-on-primary-container rounded-full px-4 py-2 flex items-center gap-2 font-label-sm text-label-sm hover:opacity-90 transition-all cursor-default hover:scale-105 duration-300 interactive-area pulse-continuous"
-  >
-  <span class="material-symbols-outlined text-[16px] icon-fill"
-  >favorite</span
-  >
-  you
-  </div>
-  </div>
-  </section>
-  </main>
-  <!-- Decorative Cloud Footer Element -->
-  <div class="cloud-bottom cloud-drift"></div>
-  <!-- Footer -->
-  <section
-  class="w-full max-w-3xl mx-auto px-4 sm:px-6 mb-stack-lg scroll-reveal"
-  >
-  <div
-  class="bg-surface-container-low rounded-3xl p-stack-md border border-surface-variant shadow-sm relative"
-  >
-  <div class="washi-tape bg-primary-container/60 washi-bucket"></div>
-  <div class="flex flex-col items-center">
-  <h3
-  class="font-display-romantic text-headline-lg text-on-surface mb-6 flex items-center gap-2"
-  >
-  bucket list
-  <span
-  class="material-symbols-outlined text-[24px] text-primary pulse-hover cursor-pointer interactive-area"
-  >favorite</span
-  >
-  </h3>
-  <ul class="space-y-4 w-full max-w-md">
-  <li
-  data-bucket-item
-  aria-pressed="false"
-  tabindex="0"
-  role="button"
-  class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
-  >
-  <span
-  class="material-symbols-outlined text-primary text-[20px] icon-outline"
-  >favorite</span
-  >
-  <span class="font-body-md text-on-surface-variant"
-  >stargazing at the park</span
-  >
-  </li>
-  <li
-  data-bucket-item
-  aria-pressed="false"
-  tabindex="0"
-  role="button"
-  class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
-  >
-  <span
-  class="material-symbols-outlined text-primary text-[20px] icon-outline"
-  >favorite</span
-  >
-  <span class="font-body-md text-on-surface-variant"
-  >pottery workshop</span
-  >
-  </li>
-  <li
-  data-bucket-item
-  aria-pressed="false"
-  tabindex="0"
-  role="button"
-  class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
-  >
-  <span
-  class="material-symbols-outlined text-primary text-[20px] icon-outline"
-  >favorite</span
-  >
-  <span class="font-body-md text-on-surface-variant"
-  >weekend beach trip</span
-  >
-  </li>
-  <li
-  data-bucket-item
-  aria-pressed="false"
-  tabindex="0"
-  role="button"
-  class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
-  >
-  <span
-  class="material-symbols-outlined text-primary text-[20px] icon-outline"
-  >favorite</span
-  >
-  <span class="font-body-md text-on-surface-variant"
-  >trying that new ramen place</span
-  >
-  </li>
-  <li
-  data-bucket-item
-  aria-pressed="false"
-  tabindex="0"
-  role="button"
-  class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
-  >
-  <span
-  class="material-symbols-outlined text-primary text-[20px] icon-outline"
-  >favorite</span
-  >
-  <span class="font-body-md text-on-surface-variant"
-  >midnight drive to nowhere</span
-  >
-  </li>
-  </ul>
-  </div>
-  <span
-  class="material-symbols-outlined absolute right-4 top-4 text-tertiary-container opacity-30 text-4xl transform rotate-12 floating-delay shimmer"
-  >temp_preferences_custom</span
-  >
-  </div>
-  </section>
-  <section
-  class="w-full max-w-3xl mx-auto px-4 sm:px-6 mb-stack-lg scroll-reveal"
-  >
-  <div
-  class="bg-surface-container-low rounded-3xl p-stack-md border border-surface-variant shadow-sm relative"
-  >
-  <div class="washi-tape bg-secondary-fixed washi-memory"></div>
-  <div class="flex flex-col items-center">
-  <h3
-  class="font-display-romantic text-headline-lg text-on-surface mb-6 flex items-center gap-2"
-  >
-  memories made
-  <span
-  class="material-symbols-outlined text-[24px] text-primary pulse-hover cursor-pointer interactive-area"
-  >favorite</span
-  >
-  </h3>
-  <ul class="space-y-4 w-full max-w-md">
-  <li
-  class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
-  >
-  <span
-  class="material-symbols-outlined text-primary text-[20px] icon-fill"
-  >task_alt</span
-  >
-  <span class="font-body-md text-on-surface-variant"
-  >stargazing at the park</span
-  >
-  </li>
-  <li
-  class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
-  >
-  <span
-  class="material-symbols-outlined text-primary text-[20px] icon-fill"
-  >task_alt</span
-  >
-  <span class="font-body-md text-on-surface-variant"
-  >pottery workshop</span
-  >
-  </li>
-  <li
-  class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
-  >
-  <span
-  class="material-symbols-outlined text-primary text-[20px] icon-fill"
-  >task_alt</span
-  >
-  <span class="font-body-md text-on-surface-variant"
-  >first coffee date</span
-  >
-  </li>
-  </ul>
-  <p
-  class="font-headline-lg text-primary text-xl mt-6 italic opacity-80"
-  >
-  more to come...
-  </p>
-  </div>
-  <span
-  class="material-symbols-outlined absolute left-4 bottom-4 text-primary-container opacity-20 text-4xl transform -rotate-12 floating shimmer"
-  >auto_stories</span
-  >
-  </div>
-  </section>
-  <footer
-  class="w-full py-stack-lg flex flex-col items-center justify-center text-center gap-unit pb-stack-lg relative z-10 bg-transparent scroll-reveal"
-  >
-  <h2
-  class="font-display-romantic text-headline-lg-mobile text-primary flex items-center gap-2"
-  >
-  <span
-  class="material-symbols-outlined text-[24px] transform -rotate-12 floating"
-  >eco</span
-  >
-  mavi + caeiona
-  <span
-  class="material-symbols-outlined text-[24px] transform rotate-12 floating-delay pulse-hover cursor-pointer interactive-area"
-  >favorite</span
-  >
-  </h2>
-  <p
-  class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2 mt-2"
-  >
-  always &amp; forever
-  <span
-  class="material-symbols-outlined text-[16px] text-primary pulse-hover cursor-pointer interactive-area icon-fill"
-  >favorite</span
-  >
-  </p>
-  </footer>
-  <!-- BottomNavBar (Mobile Only) -->
-  <nav
-  class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-lg md:hidden"
-  >
-  <div
-  class="flex justify-around items-center px-gutter py-stack-sm pb-safe w-full max-w-md mx-auto"
-  >
-  <button
-  class="flex flex-col items-center justify-center bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-full p-3 active:scale-90 duration-200 pulse-hover"
-  >
-  <span class="material-symbols-outlined icon-fill">favorite</span>
-  </button>
-  <button
-  class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
-  >
-  <span class="material-symbols-outlined">auto_awesome</span>
-  </button>
-  <button
-  class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
-  >
-  <span class="material-symbols-outlined">collections</span>
-  </button>
-  <button
-  class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
-  >
-  <span class="material-symbols-outlined">menu_book</span>
-  </button>
-  </div>
-  </nav>
+    class="text-on-surface antialiased min-h-screen flex flex-col relative pb-20 md:pb-0"
+  >
+    <!-- Particle System -->
+    <div aria-hidden="true" class="particle-container" id="particle-container">
+      <span
+        class="material-symbols-outlined text-primary-container text-sm absolute bottom-0 left-[10%] floating-particle icon-fill"
+        >favorite</span
+      >
+      <span
+        class="material-symbols-outlined text-tertiary-container text-xs absolute bottom-1/4 left-[30%] floating-particle icon-fill"
+        >favorite</span
+      >
+      <span
+        class="material-symbols-outlined text-primary-container text-sm absolute bottom-1/2 left-0 floating-particle icon-fill"
+        >favorite</span
+      >
+      <span
+        class="material-symbols-outlined text-secondary-container text-xs absolute bottom-0 left-[60%] floating-particle icon-fill"
+        >favorite</span
+      >
+      <span
+        class="material-symbols-outlined text-primary text-xs absolute bottom-[10%] left-[-10%] floating-particle icon-fill"
+        >favorite</span
+      >
+      <span
+        class="material-symbols-outlined text-tertiary-container text-sm absolute bottom-1/3 left-[80%] floating-particle icon-fill"
+        >favorite</span
+      >
+      <span
+        class="material-symbols-outlined text-primary-container text-xs absolute bottom-[20%] left-[50%] floating-particle icon-fill"
+        >star</span
+      >
+      <span
+        class="material-symbols-outlined text-tertiary-container text-sm absolute bottom-[60%] left-[20%] floating-particle shimmer icon-fill"
+        >star</span
+      >
+      <span
+        class="material-symbols-outlined text-secondary-container text-xs absolute bottom-[40%] left-[80%] floating-particle shimmer icon-fill"
+        >favorite</span
+      >
+    </div>
+    <!-- TopAppBar -->
+    <header
+      class="w-full py-4 flex justify-between items-center px-container-padding-mobile max-w-7xl mx-auto relative z-20"
+    >
+      <div class="flex items-center gap-2 text-primary">
+        <span
+          class="material-symbols-outlined pulse-continuous text-2xl icon-fill"
+          >favorite</span
+        >
+      </div>
+      <h1
+        class="font-display-romantic text-headline-lg-mobile text-primary dark:text-primary-fixed-dim md:text-display-romantic tracking-tight"
+      >
+        our little corner
+      </h1>
+      <div class="flex items-center">
+        <button
+          data-action="theme"
+          aria-pressed="false"
+          title="Toggle soft night mode"
+          class="flex items-center gap-1 bg-surface-container-high text-on-surface-variant px-3 py-1.5 rounded-full text-label-sm font-label-sm border border-outline-variant hover:bg-surface-container-highest transition-colors"
+        >
+          <span class="material-symbols-outlined text-[16px]">lock</span>
+          just us
+        </button>
+      </div>
+    </header>
+    <main
+      class="flex-grow flex flex-col items-center w-full max-w-3xl mx-auto px-4 sm:px-6 relative z-10 gap-stack-lg pb-stack-lg"
+    >
+      <!-- Decorative Elements Background -->
+      <div class="absolute inset-0 pointer-events-none overflow-hidden -z-10">
+        <span
+          class="material-symbols-outlined text-primary-container text-4xl absolute top-20 left-10 floating opacity-50 pulse-hover"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined text-tertiary-container text-2xl absolute top-40 right-10 floating-delay opacity-60 shimmer"
+          >star</span
+        >
+        <span
+          class="material-symbols-outlined text-primary text-3xl absolute top-[40%] left-[5%] floating opacity-40 pulse-hover"
+          >favorite</span
+        >
+        <span
+          class="material-symbols-outlined text-secondary-container text-xl absolute top-[60%] right-[10%] floating-delay opacity-70 shimmer"
+          >colors_spark</span
+        >
+        <span
+          class="material-symbols-outlined text-primary-container text-2xl absolute top-[80%] left-[15%] floating opacity-50 pulse-hover"
+          >favorite</span
+        >
+      </div>
+      <!-- Hero Section -->
+      <section
+        class="w-full flex flex-col md:flex-row items-center justify-between gap-8 mt-8 scroll-reveal visible"
+      >
+        <div
+          class="flex-1 text-center md:text-left flex flex-col items-center md:items-start gap-4"
+        >
+          <div class="relative">
+            <span
+              class="material-symbols-outlined absolute -top-4 -left-6 text-tertiary-container opacity-50 transform -rotate-12 shimmer"
+              >auto_awesome</span
+            >
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant italic mb-2 relative z-10"
+            >
+              a private space for two hearts
+            </p>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant flex items-center justify-center md:justify-start gap-2"
+            >
+              only you and me.
+              <span class="material-symbols-outlined text-[18px] text-primary"
+                >lock</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center relative">
+          <div
+            class="polaroid relative z-10 tilt-on-hover cursor-pointer interactive-area"
+          >
+            <div class="washi-tape"></div>
+            <img
+              alt="Couple watching sunset making a heart shape with their hands"
+              class="w-64 h-80 object-cover rounded shadow-inner"
+              data-alt="A romantic, soft-focus photograph of a couple sitting outdoors, viewed from behind. They are raising their arms to form a heart shape with their hands against a beautiful, pastel-colored sunset sky filled with soft pink and orange clouds. The scene feels intimate, warm, and nostalgic, perfectly matching a cozy, light-mode romantic scrapbook aesthetic."
+              src="assets/hero-couple-sunset.jpg"
+            />
+            <div
+              class="absolute -bottom-6 -right-6 bg-primary-container text-white p-3 rounded-full shadow-lg transform rotate-12 floating pulse-hover cursor-pointer"
+            >
+              <span class="material-symbols-outlined icon-fill">favorite</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Countdown / Date Card -->
+      <section
+        class="w-full bg-surface-container-lowest rounded-3xl p-stack-md shadow-[0_8px_30px_rgb(141,75,76,0.06)] flex flex-col sm:flex-row items-center gap-6 relative overflow-hidden scroll-reveal interactive-area"
+      >
+        <div
+          data-action="playlist"
+          role="button"
+          tabindex="0"
+          aria-label="Open our song note"
+          aria-expanded="false"
+          class="bg-primary-fixed p-4 rounded-2xl flex-shrink-0 pulse-hover cursor-pointer interactive-area"
+        >
+          <span
+            class="material-symbols-outlined text-4xl text-primary icon-fill"
+            >calendar_month</span
+          >
+        </div>
+        <div class="flex flex-col text-center sm:text-left z-10">
+          <p class="font-body-md text-body-md text-on-surface-variant mb-1">
+            today's our day
+          </p>
+          <h2
+            class="font-display-romantic text-headline-lg text-on-surface tracking-wider"
+          >
+            07 &bull; 02 &bull; 2023
+          </h2>
+          <p
+            class="font-headline-lg text-primary text-xl mt-1 flex items-center justify-center sm:justify-start gap-2 pulse-hover"
+          >
+            1st monthsary
+            <span
+              class="material-symbols-outlined text-[20px] transform rotate-12"
+              >favorite</span
+            >
+          </p>
+          <p id="playlist-card" class="playlist-card" hidden>
+            soft playlist queued: late-night talks, coffee dates, and that
+            little forever feeling.
+          </p>
+        </div>
+        <span
+          class="material-symbols-outlined absolute right-6 bottom-6 text-surface-variant text-6xl opacity-30 pointer-events-none transform -rotate-12 floating"
+          >favorite</span
+        >
+      </section>
+      <!-- Love Note -->
+      <section
+        class="w-full bg-surface-container-low rounded-3xl p-stack-md border border-surface-variant shadow-sm relative scroll-reveal interactive-area"
+      >
+        <div class="washi-tape bg-tertiary-container washi-note"></div>
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 mx-auto md:mx-0 pulse-hover cursor-pointer">
+            <span
+              class="material-symbols-outlined text-6xl text-primary opacity-80 icon-fill"
+              >mail</span
+            >
+          </div>
+          <div>
+            <h3
+              class="font-display-romantic text-headline-lg text-on-surface mb-3 flex items-center gap-2"
+            >
+              a note for you
+              <span
+                class="material-symbols-outlined text-[24px] text-primary pulse-hover cursor-pointer"
+                >favorite</span
+              >
+            </h3>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+            >
+              our first monthsary and it already feels like home. thank you for
+              choosing me every day. i love how we make the little things feel
+              so special. no matter what happens, i'll always be here for you. i
+              love you so much!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Mini Photo Grid -->
+      <section
+        class="w-full bg-surface-container-lowest rounded-3xl p-stack-md shadow-[0_8px_30px_rgb(141,75,76,0.06)] scroll-reveal"
+      >
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div
+            class="aspect-square rounded-2xl overflow-hidden relative group tilt-on-hover cursor-pointer interactive-area"
+          >
+            <img
+              alt="Holding hands"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="Close up of two hands gently holding each other in a warm, intimate setting. The lighting is soft and flattering, creating a romantic, cozy light-mode aesthetic suitable for a personal memory scrapbook."
+              src="assets/memory-holding-hands.jpg"
+            />
+            <div
+              class="absolute -bottom-2 -left-2 bg-primary-container p-1 rounded-full transform -rotate-12 z-10 floating pulse-hover"
+            >
+              <span
+                class="material-symbols-outlined text-white text-sm icon-fill"
+                >favorite</span
+              >
+            </div>
+          </div>
+          <div
+            class="aspect-square rounded-2xl overflow-hidden relative group tilt-on-hover cursor-pointer interactive-area"
+          >
+            <img
+              alt="Shoes together"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="A casual top-down view of two people's feet wearing sneakers standing close together on the pavement. The mood is candid and playful, fitting a personal, scrapbook-style light-mode theme with warm tones."
+              src="assets/memory-shoes-together.jpg"
+            />
+            <div
+              class="absolute top-2 right-2 bg-tertiary-container p-1 rounded-full transform rotate-12 z-10 floating-delay shimmer"
+            >
+              <span
+                class="material-symbols-outlined text-white text-sm icon-fill"
+                >star</span
+              >
+            </div>
+          </div>
+          <div
+            class="aspect-square rounded-2xl overflow-hidden relative group tilt-on-hover cursor-pointer interactive-area"
+          >
+            <img
+              alt="Coffee dates"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="Two iced coffees or boba teas being held up together in a cheers gesture. The background features a soft, pastel gingham picnic blanket. The image is bright, warm, and highly curated to match a cute, romantic light-mode UI."
+              src="assets/memory-coffee-date.jpg"
+            />
+          </div>
+          <div
+            class="aspect-square rounded-2xl overflow-hidden relative group tilt-on-hover cursor-pointer interactive-area"
+          >
+            <img
+              alt="Mirror selfie"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              data-alt="A cute, candid mirror selfie of a young couple wearing cozy clothing. The lighting is soft and neutral, leaning towards a warm, light-mode scrapbook aesthetic, capturing a moment of everyday intimacy."
+              src="assets/memory-mirror-selfie.jpg"
+            />
+            <div
+              class="absolute bottom-2 right-2 text-primary-container transform rotate-6 z-10 floating shimmer"
+            >
+              <span class="material-symbols-outlined text-2xl icon-fill"
+                >auto_awesome</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Favorite Things Tags -->
+      <section
+        class="w-full bg-secondary-container/30 rounded-3xl p-stack-md border border-secondary-container border-dashed flex flex-col items-center text-center scroll-reveal"
+      >
+        <h3
+          class="font-display-romantic text-headline-lg text-on-surface mb-6 flex items-center gap-2"
+        >
+          our favorite things
+          <span
+            class="material-symbols-outlined text-[24px] text-primary pulse-hover cursor-pointer interactive-area"
+            >favorite</span
+          >
+        </h3>
+        <div class="flex flex-wrap justify-center gap-3">
+          <div
+            class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
+          >
+            <span class="material-symbols-outlined text-[16px] text-tertiary"
+              >dark_mode</span
+            >
+            late night talks
+          </div>
+          <div
+            class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
+          >
+            <span class="material-symbols-outlined text-[16px] text-tertiary"
+              >mood</span
+            >
+            silly moments
+          </div>
+          <div
+            class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
+          >
+            <span class="material-symbols-outlined text-[16px] text-tertiary"
+              >local_cafe</span
+            >
+            coffee dates
+          </div>
+          <div
+            class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
+          >
+            <span class="material-symbols-outlined text-[16px] text-tertiary"
+              >directions_car</span
+            >
+            road trips
+          </div>
+          <div
+            class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
+          >
+            <span class="material-symbols-outlined text-[16px] text-tertiary"
+              >chat</span
+            >
+            inside jokes
+          </div>
+          <div
+            class="bg-surface rounded-full px-4 py-2 border border-outline-variant flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm hover:border-primary transition-colors cursor-default hover:scale-105 duration-300 interactive-area"
+          >
+            <span
+              class="material-symbols-outlined text-[16px] text-primary pulse-hover"
+              >favorite</span
+            >
+            comfort &amp; hugs
+          </div>
+          <div
+            class="bg-primary-container text-on-primary-container rounded-full px-4 py-2 flex items-center gap-2 font-label-sm text-label-sm hover:opacity-90 transition-all cursor-default hover:scale-105 duration-300 interactive-area pulse-continuous"
+          >
+            <span class="material-symbols-outlined text-[16px] icon-fill"
+              >favorite</span
+            >
+            you
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Decorative Cloud Footer Element -->
+    <div class="cloud-bottom cloud-drift"></div>
+    <!-- Footer -->
+    <section
+      class="w-full max-w-3xl mx-auto px-4 sm:px-6 mb-stack-lg scroll-reveal"
+    >
+      <div
+        class="bg-surface-container-low rounded-3xl p-stack-md border border-surface-variant shadow-sm relative"
+      >
+        <div class="washi-tape bg-primary-container/60 washi-bucket"></div>
+        <div class="flex flex-col items-center">
+          <h3
+            class="font-display-romantic text-headline-lg text-on-surface mb-6 flex items-center gap-2"
+          >
+            bucket list
+            <span
+              class="material-symbols-outlined text-[24px] text-primary pulse-hover cursor-pointer interactive-area"
+              >favorite</span
+            >
+          </h3>
+          <ul class="space-y-4 w-full max-w-md">
+            <li
+              data-bucket-item
+              aria-pressed="false"
+              tabindex="0"
+              role="button"
+              class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-[20px] icon-outline"
+                >favorite</span
+              >
+              <span class="font-body-md text-on-surface-variant"
+                >stargazing at the park</span
+              >
+            </li>
+            <li
+              data-bucket-item
+              aria-pressed="false"
+              tabindex="0"
+              role="button"
+              class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-[20px] icon-outline"
+                >favorite</span
+              >
+              <span class="font-body-md text-on-surface-variant"
+                >pottery workshop</span
+              >
+            </li>
+            <li
+              data-bucket-item
+              aria-pressed="false"
+              tabindex="0"
+              role="button"
+              class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-[20px] icon-outline"
+                >favorite</span
+              >
+              <span class="font-body-md text-on-surface-variant"
+                >weekend beach trip</span
+              >
+            </li>
+            <li
+              data-bucket-item
+              aria-pressed="false"
+              tabindex="0"
+              role="button"
+              class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-[20px] icon-outline"
+                >favorite</span
+              >
+              <span class="font-body-md text-on-surface-variant"
+                >trying that new ramen place</span
+              >
+            </li>
+            <li
+              data-bucket-item
+              aria-pressed="false"
+              tabindex="0"
+              role="button"
+              class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-[20px] icon-outline"
+                >favorite</span
+              >
+              <span class="font-body-md text-on-surface-variant"
+                >midnight drive to nowhere</span
+              >
+            </li>
+          </ul>
+        </div>
+        <span
+          class="material-symbols-outlined absolute right-4 top-4 text-tertiary-container opacity-30 text-4xl transform rotate-12 floating-delay shimmer"
+          >temp_preferences_custom</span
+        >
+      </div>
+    </section>
+    <section
+      class="w-full max-w-3xl mx-auto px-4 sm:px-6 mb-stack-lg scroll-reveal"
+    >
+      <div
+        class="bg-surface-container-low rounded-3xl p-stack-md border border-surface-variant shadow-sm relative"
+      >
+        <div class="washi-tape bg-secondary-fixed washi-memory"></div>
+        <div class="flex flex-col items-center">
+          <h3
+            class="font-display-romantic text-headline-lg text-on-surface mb-6 flex items-center gap-2"
+          >
+            memories made
+            <span
+              class="material-symbols-outlined text-[24px] text-primary pulse-hover cursor-pointer interactive-area"
+              >favorite</span
+            >
+          </h3>
+          <ul class="space-y-4 w-full max-w-md">
+            <li
+              class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-[20px] icon-fill"
+                >task_alt</span
+              >
+              <span class="font-body-md text-on-surface-variant"
+                >stargazing at the park</span
+              >
+            </li>
+            <li
+              class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-[20px] icon-fill"
+                >task_alt</span
+              >
+              <span class="font-body-md text-on-surface-variant"
+                >pottery workshop</span
+              >
+            </li>
+            <li
+              class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 hover:scale-[1.02] transition-transform duration-300 interactive-area cursor-pointer"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-[20px] icon-fill"
+                >task_alt</span
+              >
+              <span class="font-body-md text-on-surface-variant"
+                >first coffee date</span
+              >
+            </li>
+          </ul>
+          <p
+            class="font-headline-lg text-primary text-xl mt-6 italic opacity-80"
+          >
+            more to come...
+          </p>
+        </div>
+        <span
+          class="material-symbols-outlined absolute left-4 bottom-4 text-primary-container opacity-20 text-4xl transform -rotate-12 floating shimmer"
+          >auto_stories</span
+        >
+      </div>
+    </section>
+    <footer
+      class="w-full py-stack-lg flex flex-col items-center justify-center text-center gap-unit pb-stack-lg relative z-10 bg-transparent scroll-reveal"
+    >
+      <h2
+        class="font-display-romantic text-headline-lg-mobile text-primary flex items-center gap-2"
+      >
+        <span
+          class="material-symbols-outlined text-[24px] transform -rotate-12 floating"
+          >eco</span
+        >
+        mavi + caeiona
+        <span
+          class="material-symbols-outlined text-[24px] transform rotate-12 floating-delay pulse-hover cursor-pointer interactive-area"
+          >favorite</span
+        >
+      </h2>
+      <p
+        class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2 mt-2"
+      >
+        always &amp; forever
+        <span
+          class="material-symbols-outlined text-[16px] text-primary pulse-hover cursor-pointer interactive-area icon-fill"
+          >favorite</span
+        >
+      </p>
+    </footer>
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+      class="fixed bottom-0 w-full z-50 rounded-t-xl bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-lg md:hidden"
+    >
+      <div
+        class="flex justify-around items-center px-gutter py-stack-sm pb-safe w-full max-w-md mx-auto"
+      >
+        <button
+          class="flex flex-col items-center justify-center bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-full p-3 active:scale-90 duration-200 pulse-hover"
+        >
+          <span class="material-symbols-outlined icon-fill">favorite</span>
+        </button>
+        <button
+          class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
+        >
+          <span class="material-symbols-outlined">auto_awesome</span>
+        </button>
+        <button
+          class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
+        >
+          <span class="material-symbols-outlined">collections</span>
+        </button>
+        <button
+          class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-3 hover:text-primary transition-colors active:scale-90 duration-200"
+        >
+          <span class="material-symbols-outlined">menu_book</span>
+        </button>
+      </div>
+    </nav>
   </body>
 </html>

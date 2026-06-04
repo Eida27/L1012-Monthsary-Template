@@ -5,10 +5,17 @@ import assert from "node:assert/strict";
 
 const root = join(import.meta.dirname, "..");
 const indexPath = join(root, "index.html");
+const stylesPath = join(root, "styles.css");
+const scriptPath = join(root, "script.js");
 
 function readIndexHtml() {
   assert.ok(existsSync(indexPath), "index.html should exist");
   return readFileSync(indexPath, "utf8");
+}
+
+function readProjectFile(path, message) {
+  assert.ok(existsSync(path), message);
+  return readFileSync(path, "utf8");
 }
 
 describe("Our Little Corner static app", () => {
@@ -32,6 +39,15 @@ describe("Our Little Corner static app", () => {
 
   test("preserves the requested screen content and playful motion hooks", () => {
     const indexHtml = readIndexHtml();
+    const stylesCss = readProjectFile(stylesPath, "styles.css should exist");
+    const scriptJs = readProjectFile(scriptPath, "script.js should exist");
+
+    assert.match(indexHtml, /<link href="styles\.css" rel="stylesheet"\/>/);
+    assert.match(indexHtml, /<script src="script\.js"><\/script>/);
+    assert.doesNotMatch(indexHtml, /<style[\s>]/i);
+    assert.doesNotMatch(indexHtml, /<script(?![^>]*\bsrc=)/i);
+    assert.doesNotMatch(indexHtml, /\sstyle=/i);
+
     for (const text of [
       "our little corner",
       "a private space for two hearts",
@@ -49,7 +65,9 @@ describe("Our Little Corner static app", () => {
     assert.match(indexHtml, /data-action="theme"/);
     assert.match(indexHtml, /data-action="playlist"/);
     assert.match(indexHtml, /data-bucket-item/);
-    assert.match(indexHtml, /createHeartBurst/);
-    assert.match(indexHtml, /prefers-reduced-motion/);
+    assert.match(scriptJs, /createHeartBurst/);
+    assert.match(scriptJs, /tailwind\.config/);
+    assert.match(stylesCss, /prefers-reduced-motion/);
+    assert.match(stylesCss, /\.icon-fill/);
   });
 });
